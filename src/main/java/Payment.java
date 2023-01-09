@@ -1,9 +1,9 @@
 import java.util.Iterator;
 import java.util.List;
 
-public class CartPayment {
+public class Payment {
     private double totalAmount;
-    private double discountAmount;
+    private  double discountAmount;
 
     public void amountTobePaid(List<Item> cartItems) {
         Iterator<Item> iterator2 = cartItems.iterator();
@@ -15,7 +15,7 @@ public class CartPayment {
         System.out.println("Total price of cart: " + this.totalAmount);
 
         if (totalAmount >= 100) {
-            double discountAmount = totalAmount - (totalAmount * (0.05));
+            discountAmount = totalAmount - (totalAmount * (0.05));
             System.out.println("Cart price after availing discount : " + discountAmount);
         }
     }
@@ -28,10 +28,11 @@ public class CartPayment {
     }*/
 
         public void paymentViaWallet() {
-            double walletAmount = 1000;
+            double walletBalance = 1000;
+            double balanceAfterPayment;
 
-            walletAmount = walletAmount - discountAmount;
-            System.out.println("Remaining wallet amount: " + walletAmount);
+            balanceAfterPayment = walletBalance - discountAmount;
+            System.out.println("Wallet balance after payment: " + balanceAfterPayment);
 
         }
 

@@ -1,29 +1,29 @@
 import java.util.List;
 
 public class Item {
-    public String ItemName;
-    public int ItemQty;
-    public int ItemCost;
+    public String itemName;
+    public int itemQty;
+    public int itemCost;
 
     public Item(String itemName, int itemQty, int itemCost) {
-        ItemName = itemName;
-        ItemQty = itemQty;
-        ItemCost = itemCost;
+        this.itemName = itemName;
+        this.itemQty = itemQty;
+        this.itemCost = itemCost;
     }
 
     public String getItemName() {
-        return ItemName;
+        return itemName;
     }
 
     public int getItemQty() {
-        return ItemQty;
+        return itemQty;
     }
 
     public int getItemCost() {
-        return ItemCost;
+        return itemCost;
     }
 
     public void setItemQty(int itemQty) {
-        ItemQty = itemQty;
+        this.itemQty = itemQty;
     }
 }

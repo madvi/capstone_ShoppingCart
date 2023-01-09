@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ed52f1c-539d-4768-9fc7-e84b13c715ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ShoppingCart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AddItems.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CartItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CartPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OfferOnItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Offer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cart.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

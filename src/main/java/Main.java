@@ -5,25 +5,29 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Item i1 = new Item("Apple", 3, 10);
-        Item i2 = new Item("Milk", 2, 10);
-        Item i3 = new Item("Newspaper", 4, 10);
+        Item apple = new Item("Apple", 3, 11);
+        Item milk = new Item("Milk", 2, 30);
+        Item newspaper = new Item("Newspaper", 4, 15);
 
         List<Item> cartItems = new ArrayList<>();
-        cartItems.add(i1);
-        cartItems.add(i2);
-        cartItems.add(i3);
+        cartItems.add(apple);
+        cartItems.add(milk);
+        cartItems.add(newspaper);
 
-        ShoppingCart shoppingCart = new ShoppingCart();
-        shoppingCart.itemsInCart(cartItems);
+        Cart cart = new Cart();
+        cart.itemsInCart(cartItems);
+        cart.updateCartItem(cartItems,"Apple");
+        cart.reduceCartItem(cartItems,"Newspaper");
+        cart.itemsInCartAfterUpdate(cartItems);
 
-        CartPayment cartPayment = new CartPayment();
-        cartPayment.amountTobePaid(cartItems);
-        cartPayment.paymentViaWallet();
+        Offer offer = new Offer();
+        offer.buyTwoGetOneOffer(cartItems,"Milk");
 
-        OfferOnItems offerOnItems = new OfferOnItems();
-        offerOnItems.buyTwoGetOneOffer(cartItems);
-        offerOnItems.itemCountAfterAvailingOffer(cartItems);
+        //offerOnItems.itemCountAfterAvailingOffer(cartItems);
+
+        Payment payment = new Payment();
+        payment.amountTobePaid(cartItems);
+        payment.paymentViaWallet();
 
     }
 }
