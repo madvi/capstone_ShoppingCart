@@ -9,24 +9,22 @@ public class Main {
         Item milk = new Item("Milk", 2, 30);
         Item newspaper = new Item("Newspaper", 4, 15);
 
-        List<Item> cartItems = new ArrayList<>();
-        cartItems.add(apple);
-        cartItems.add(milk);
-        cartItems.add(newspaper);
 
         Cart cart = new Cart();
-        cart.itemsInCart(cartItems);
-        cart.updateCartItem(cartItems,"Apple");
-        cart.reduceCartItem(cartItems,"Newspaper");
-        cart.itemsInCartAfterUpdate(cartItems);
+        cart.itemsInCart(apple,milk,newspaper);
+
+        cart.updateCartItem(apple);
+        cart.reduceCartItem(newspaper);
+
+        cart.itemsInCartAfterUpdate();
 
         Offer offer = new Offer();
-        offer.buyTwoGetOneOffer(cartItems,"Milk");
+        offer.buyTwoGetOneOffer(cart.cartItems,"Milk");
 
         //offerOnItems.itemCountAfterAvailingOffer(cartItems);
 
         Payment payment = new Payment();
-        payment.amountTobePaid(cartItems);
+        payment.amountTobePaid(cart.cartItems);
         payment.paymentViaWallet();
 
     }
